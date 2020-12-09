@@ -5,23 +5,24 @@ body {
 
 /* banniere */
 .banner {
-    position: relative;
     margin: 0 10%;
+    position: relative;
+    display: flex;
+    justify-content: center ;
+    align-items: center;
 }
 
 .banner h1, h4 {
     position: absolute;
-    top: 40%;
-    left: 40%;
     text-transform: capitalize;
     color: white;
+    padding: 0;
+    margin: 0;
 }
 .banner h4{
-    margin: 70px 0;
     font-size: 20px;
 }
 .banner h1{
-    margin: 0px 80px;
     font-family: 'Pacifico', cursive;
 }
 
@@ -29,6 +30,88 @@ body {
     position: absolute;
     color: white;
     width: 90px;
-    top: 60%;
-    left: 45%;
 }
+
+/* section 1 */
+
+
+section:nth-of-type(1) .sect1div1 {
+    padding: 20px 0;
+    /* width: 70%; */
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+section:nth-of-type(1) .sect1div1 button {
+    padding: 10px;
+    background-color: white;
+    margin-bottom: 15px;
+}
+
+/* section 2 */
+
+section:nth-of-type(2) {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+}
+
+section:nth-of-type(2) .divcart {
+    width: 40%;
+    margin: 20px;
+    text-align: center;
+    background-color: white;
+}
+section:nth-of-type(2) .divcart p {
+    padding: 7px;
+}
+section:nth-of-type(2) .divcart .cartimg {
+    position: relative;
+}
+section:nth-of-type(2) .divcart .cartimg img {
+    width: 100%;
+    filter: brightness(0.50);
+    transition: all 1s;
+}
+
+/* animation hover */
+section:nth-of-type(2) .divcart .cartimg:hover img  {
+    overflow: hidden;    
+    transform: scale(1.2);
+}
+
+
+
+.divcart .cartimg h3 {
+    position: absolute;
+    top: 0;
+    color: white;
+    top:40%;
+    left:30%;
+    text-transform: uppercase;
+}
+section:nth-of-type(2) .divcart button {
+    padding: 10px;
+    background-color: white;
+    margin-bottom: 15px;
+}
+
+/*  section 3*/
+
+section:nth-of-type(3) .sect3div1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+section:nth-of-type(3) hr {
+    margin-top: 8%;
+    width: 100px;
+}
+
+/* footer */
+
